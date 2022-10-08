@@ -67,7 +67,17 @@ public class Restaurant {
     }
 
     public int totalCost(List<String> itemNames){
-        return Integer.MAX_VALUE;
+        int total = 0;
+        if(itemNames.size() == 0)
+            return total;
+        for(String itemName : itemNames){
+            total = total + getItemPriceFromItemName(itemName);
+        }
+        return total;
+    }
+    private int getItemPriceFromItemName(String itemName){
+        String itemNameWithPrice = findItemByName(itemName).toString();
+        return Integer.parseInt(itemNameWithPrice.substring(itemNameWithPrice.indexOf(':') + 1, itemNameWithPrice.length() - 1));
     }
 
 }

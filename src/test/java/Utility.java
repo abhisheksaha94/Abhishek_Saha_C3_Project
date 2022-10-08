@@ -15,8 +15,8 @@ public class Utility {
         }
         else
             restaurant = service.addRestaurant(resturantName,"Chennai",openingTime,closingTime);
-        restaurant.addToMenu("Sweet corn soup",110);
-        restaurant.addToMenu("Vegetable lasagne", 220);
+        restaurant.addToMenu("Sweet corn soup",119);
+        restaurant.addToMenu("Vegetable lasagne", 269);
         return restaurant;
     }
 
