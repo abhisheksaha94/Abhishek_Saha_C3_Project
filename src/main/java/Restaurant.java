@@ -66,4 +66,8 @@ public class Restaurant {
         return name;
     }
 
+    public int totalCost(List<String> itemNames){
+        return Integer.MAX_VALUE;
+    }
+
 }
